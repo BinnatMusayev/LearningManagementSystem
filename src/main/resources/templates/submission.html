@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="header :: head">
+
+</head>
+<body >
+
+	<nav th:replace="header :: navigation_bar">
+
+	</nav>
+
+
+	<div id="container" class="container-fluid bg-light h-100" >
+		<div class="row">
+			<div class="col-12">
+				<h3 class="m-4">Submitter: <span>John Doe</span> </h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<h3 class="ml-4 mb-4">Date: <span>12.04.2018</span> </h3>
+			</div>
+		</div>
+
+		<!-- If have been evaulated -->
+		<div class="row">
+			<div class="col-12">
+				<h3 class="ml-4 mb-4">Points: <span>8</span> </h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<h3 class="ml-4 mb-4">Solution:</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 bg-white">
+				<h6 class="ml-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h6>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<h5 class="ml-4 mb-4 d-inline">Put points:</h5>
+				<select class="custom-select w-25 ml-4 d-inline" id="inlineFormCustomSelect">
+			        <option value="1" selected>1</option>
+			        <option value="2">2</option>
+			        <option value="3">3</option>
+			        <option value="4">4</option>
+			        <option value="5">5</option>
+			     </select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<!-- Write Re-Evaluate if already evaluated -->
+				<button type="button" class="btn btn-success m-4">Evaluate</button>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
