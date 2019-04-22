@@ -10,7 +10,10 @@ import javax.persistence.ManyToOne;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
@@ -18,16 +21,17 @@ public class Submission {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer s_id;
+	private Integer sId;
 
 	@ManyToOne
 	private Task task;
 
 	private String submitterName;
-	private String s_desc;
+	
+	private String sDesc;
 
 	@CreationTimestamp
-	private LocalDateTime submission_date;
+	private LocalDateTime submissionDate;
 
 	private Integer point;
 }

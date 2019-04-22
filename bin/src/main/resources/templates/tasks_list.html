@@ -20,11 +20,21 @@
 		<div class="row">
 
 			<div class="col-6 text-center align-self-center m-auto">
-				<a th:each="task : ${tasks}" th:href="@{/tasks/{id}(id=${task.taskId})}" class="list-group-item list-group-item-action">
-					<p th:text="${task.taskName}">abc..</p>
+				<a href="#" class="list-group-item list-group-item-action">
+					Task 1
   				</a>
 
-  				
+  				<a href="#" class="list-group-item list-group-item-action">
+					Task 2
+  				</a>
+
+  				<a href="#" class="list-group-item list-group-item-action">
+					Task 3
+  				</a>
+
+  				<a href="#" class="list-group-item list-group-item-action">
+					Task 4
+  				</a>
 			</div>
 		</div>
 
