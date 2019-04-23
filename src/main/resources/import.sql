@@ -1,5 +1,5 @@
-insert into teacher (username, password, name) values ('teacher', 'pass123', 'John Doe');
-insert into teacher (username, password, name) values ('teacher2', 'pass123', 'Kal Drogo');
+insert into teacher (username, password, name) values ('teacher', '$2a$12$y32WiiXJxQH1bjDL21cKIOCqdRx3UGwsRmzYRJ1xFvEzr0J7n2gf6', 'John Doe');
+insert into teacher (username, password, name) values ('teacher2', '$2a$12$y32WiiXJxQH1bjDL21cKIOCqdRx3UGwsRmzYRJ1xFvEzr0J7n2gf6', 'Kal Drogo');
 
 insert into task (taskDesc, taskName, teacher_teacherId) values ('this is first description and it is just a long text', 'first task', 1);
 insert into task (taskDesc, taskName, teacher_teacherId) values ('task number 2 has a different description', 'to do', 1);

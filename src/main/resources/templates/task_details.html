@@ -38,7 +38,7 @@
 		<div class="row">
 
 			<div class="col-8 align-self-center ml-4 mb-5">
-				<a th:each="sub : ${submissions}" th:href="@{/submission/{id}(id=${sub.sId})}" class="list-group-item list-group-item-action  ">
+				<a th:each="sub : ${submissions}" th:href="@{{tid}/submission/{id}(id=${sub.sId}, tid=${task.taskId})}" class="list-group-item list-group-item-action  ">
 					<p th:text="${sub.submitterName}" class="d-inline" >Submitter Name 1 </p>
 					<p th:text="${#temporals.format(sub.submissionDate, 'dd-MM-yyyy')}" class="d-inline bg-warning ml-4 float-right" >12.03.2019 15:23</p>
 					<p th:text="${sub.point}? 'points: ' + ${sub.point} : 'points: 0'" class="text-info d-inline  float-right" >
